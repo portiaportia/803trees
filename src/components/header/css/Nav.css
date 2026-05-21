@@ -1,0 +1,152 @@
+.nav-wrapper {
+  position: relative;
+
+  margin-left: auto;
+  z-index:2;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-white);
+}
+
+.nav-cta {
+  margin-left: var(--space-sm);
+
+  padding: 12px 22px;
+
+  border-radius: var(--radius-sm);
+
+  background: linear-gradient(
+    180deg,
+    var(--color-accent),
+    var(--color-accent-dark)
+  );
+
+  color: var(--color-white);
+  text-decoration: none;
+
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+}
+
+.menu-toggle {
+  display: none;
+
+  position: relative;
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-bg-light);
+
+  cursor: pointer;
+}
+
+/* Chevron */
+
+.menu-toggle::before,
+.menu-toggle::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+
+  width: 12px;
+  height: 2px;
+
+  background: var(--color-white);
+
+  border-radius: 999px;
+
+  transition: var(--transition);
+}
+
+/* Left Side */
+
+.menu-toggle::before {
+  left: 13px;
+  transform: rotate(40deg);
+}
+
+/* Right Side */
+
+.menu-toggle::after {
+  right: 12px;
+  transform: rotate(-40deg);
+}
+
+/* OPEN = X */
+
+.menu-toggle.open::before {
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.menu-toggle.open::after {
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: calc(100% + var(--space-lg));
+    right: 0;
+
+    width: min(280px, calc(100vw - 32px));
+
+    padding: var(--space-xl);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    background: rgba(18, 18, 18, 0.98);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+
+    display: none;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-cta {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    margin-left: 0;
+
+    text-align: center;
+  }
+}

@@ -7,7 +7,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+  /* COLORS */
+  --color-bg: #121212;
+  --color-bg-light: rgba(255, 255, 255, 0.03);
+
+  --color-white: #ffffff;
+
+  --color-text: rgba(255, 255, 255, 0.82);
+  --color-text-light: rgba(255, 255, 255, 0.6);
+
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --color-accent: #ff8a1f;
+  --color-accent-dark: #e87410;
+
+  /* FONT SIZES */
+  --fs-sm: 0.95rem;
+  --fs-md: 0.98rem;
+  --fs-lg: 1rem;
+  --fs-xl: 2rem;
+
+  /* FONT WEIGHTS */
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* SPACING */
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 14px;
+  --space-lg: 18px;
+  --space-xl: 24px;
+  --space-2xl: 34px;
+
+  /* BORDER RADIUS */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* TRANSITIONS */
+  --transition: 0.2s ease;
+
+  /* CONTAINER */
+  --container-width: 1180px;
+}
+
+/* ========================================
+   GLOBAL RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+
+body {
+  background: var(--color-bg);
+  color: var(--color-white);
+
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
 }

@@ -1,0 +1,62 @@
+.licensed-banner {
+  background: linear-gradient(180deg, #1f6a37, #15592d);
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.licensed-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.licensed-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.licensed-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.licensed-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.licensed-right {
+  text-align: right;
+}
+
+.licensed-rating {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.licensed-rating span {
+  margin-left: 6px;
+}
+
+@media (max-width: 768px) {
+  .licensed-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .licensed-right {
+    text-align: left;
+  }
+}

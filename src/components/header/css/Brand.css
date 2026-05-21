@@ -1,0 +1,23 @@
+.brand {
+  display: flex;
+  align-items: baseline;
+
+  text-decoration: none;
+
+  font-weight: var(--fw-black);
+}
+
+.brand-main {
+  font-size: var(--fs-xl);
+  color: var(--color-white);
+}
+
+.brand-accent {
+  font-size: var(--fs-xl);
+  color: var(--color-accent);
+}
+
+.brand-dot {
+  font-size: var(--fs-lg);
+  color: var(--color-text);
+}
