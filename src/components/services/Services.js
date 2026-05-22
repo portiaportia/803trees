@@ -33,7 +33,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       <div className="services-inner">
         <div className="services-header">
           <p className="services-eyebrow">Our Services</p>

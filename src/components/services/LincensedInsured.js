@@ -12,10 +12,7 @@ const LicensedInsured = () => {
       </div>
 
       <div className="licensed-right">
-        <div className="licensed-rating">
-          ★★★★★ <span>5.0</span>
-        </div>
-        <p className="licensed-text">Based on 100+ reviews</p>
+        
       </div>
     </div>
   );

@@ -1,0 +1,30 @@
+.why-item {
+  color: var(--color-white);
+}
+
+.why-item-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4e9d67;
+}
+
+.why-item-title {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.why-item-text {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
