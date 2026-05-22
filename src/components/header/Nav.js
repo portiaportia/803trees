@@ -13,10 +13,8 @@ const Nav = () => {
         aria-label="Toggle navigation"></button>
 
       <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
-        <a href="/" className="nav-link active">Home</a>
-        <a href="#services" className="nav-link">Services</a>
         <a href="#about" className="nav-link">About</a>
-        <a href="/gallery" className="nav-link">Gallery</a>
+        <a href="#services" className="nav-link">Services</a>
         <a href="#estimate" className="nav-cta">
           Get a Free Estimate
         </a>
