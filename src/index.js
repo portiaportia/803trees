@@ -5,7 +5,7 @@ import './index.css';
 import Layout from "./Layout";
 import Home from "./pages/Home";
 
-const basename = "/803trees";
+const basename = "/803tree";
 
 const App = () => {
   return (
