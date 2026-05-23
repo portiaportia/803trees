@@ -5,11 +5,11 @@ import './index.css';
 import Layout from "./Layout";
 import Home from "./pages/Home";
 
-const basename = "/803tree";
+//const basename = "/803tree";
 
 const App = () => {
   return (
-      <BrowserRouter basename={basename}>
+      <BrowserRouter>
         <Routes>
           <Route path = "/" element = {<Layout />}>
             <Route index element={<Home />} />

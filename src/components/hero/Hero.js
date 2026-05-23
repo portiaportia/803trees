@@ -17,8 +17,8 @@ const Hero = () => {
         </p>
 
         <h1 className="hero-title">
-          Expert Tree Care & <br />
-          Removal in South Carolina
+          South Carolina <br />
+          Tree Care Experts
         </h1>
 
         <p className="hero-text">
