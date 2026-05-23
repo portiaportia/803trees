@@ -1,7 +1,7 @@
 .schedule-section {
-  background: #111;
+  background: var(--color-bg);
   padding: 80px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid var(--color-border);
 }
 
 .schedule-inner {
@@ -16,9 +16,9 @@
 }
 
 .schedule-eyebrow {
-  color: #e87b1e;
+  color: var(--color-accent);
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -26,14 +26,14 @@
 
 .schedule-title {
   font-size: 2.25rem;
-  font-weight: 800;
-  color: #fff;
+  font-weight: var(--fw-black);
+  color: var(--color-white);
   margin-bottom: 10px;
 }
 
 .schedule-subtitle {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--fs-lg);
+  color: var(--color-text-light);
   line-height: 1.6;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .required {
-  color: #e87b1e;
+  color: var(--color-accent);
   margin-left: 2px;
 }
 
@@ -82,12 +82,12 @@
 .form-group select,
 .form-group textarea {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
   padding: 12px 16px;
-  color: #fff;
-  font-size: 0.95rem;
-  transition: border-color 0.2s;
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  transition: border-color 0.2s, background 0.2s;
   outline: none;
   font-family: inherit;
 }
@@ -99,13 +99,13 @@
 
 .form-group select option {
   background: #1a1a1a;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #e87b1e;
+  border-color: var(--color-accent);
   background: rgba(232, 123, 30, 0.05);
 }
 
@@ -124,7 +124,7 @@
 
 .upload-zone {
   border: 2px dashed rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   padding: 32px 24px;
   text-align: center;
   cursor: pointer;
@@ -132,7 +132,7 @@
 }
 
 .upload-zone:hover {
-  border-color: #e87b1e;
+  border-color: var(--color-accent);
   background: rgba(232, 123, 30, 0.04);
 }
 
@@ -142,7 +142,7 @@
 }
 
 .upload-text {
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 4px;
@@ -166,9 +166,9 @@
   position: relative;
   width: 80px;
   height: 80px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-border);
 }
 
 .preview-item img {
@@ -187,7 +187,7 @@
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.75);
   border: none;
-  color: #fff;
+  color: var(--color-white);
   font-size: 0.9rem;
   line-height: 1;
   cursor: pointer;
@@ -203,7 +203,7 @@
   font-size: 0.9rem;
   background: rgba(224, 82, 82, 0.08);
   border: 1px solid rgba(224, 82, 82, 0.2);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   padding: 12px 16px;
 }
 
@@ -211,12 +211,12 @@
 
 .schedule-submit {
   padding: 15px 32px;
-  background: linear-gradient(180deg, #f08c2a, #d4721a);
+  background: linear-gradient(180deg, var(--color-accent-dark), #d4721a);
   border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 700;
+  border-radius: var(--radius-sm);
+  color: var(--color-white);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
   cursor: pointer;
   transition: opacity 0.2s, transform 0.1s;
   align-self: flex-start;
@@ -247,9 +247,9 @@
   height: 64px;
   border-radius: 50%;
   background: linear-gradient(180deg, #2a8a4a, #1f6a37);
-  color: #fff;
+  color: var(--color-white);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,21 +258,21 @@
 
 .schedule-success h2 {
   font-size: 2rem;
-  font-weight: 800;
-  color: #fff;
+  font-weight: var(--fw-black);
+  color: var(--color-white);
   margin-bottom: 10px;
 }
 
 .schedule-success p {
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 1rem;
+  color: var(--color-text-light);
+  font-size: var(--fs-lg);
   margin-bottom: 28px;
 }
 
 .success-reset {
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
   color: rgba(255, 255, 255, 0.6);
   padding: 10px 22px;
   font-size: 0.9rem;
@@ -282,7 +282,7 @@
 
 .success-reset:hover {
   border-color: rgba(255, 255, 255, 0.35);
-  color: #fff;
+  color: var(--color-white);
 }
 
 /* Responsive */
