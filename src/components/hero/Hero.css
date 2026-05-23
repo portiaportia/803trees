@@ -1,14 +1,65 @@
 .hero {
+  position: relative;
+
   min-height: 620px;
+
   background: var(--color-bg);
-  position:relative;
+
+  overflow: hidden;
+}
+
+/* IMAGE */
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* DARK LEFT OVERLAY */
+
+.hero-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(18, 18, 18, 0.96) 0%,
+    rgba(18, 18, 18, 0.82) 28%,
+    rgba(18, 18, 18, 0.4) 48%,
+    rgba(18, 18, 18, 0) 70%
+  );
+}
+
+/* CONTENT */
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+  max-width: 720px;
+
+  padding: 80px;
 }
 
 .hero-eyebrow {
   margin-bottom: var(--space-md);
+
   color: #4e9d67;
+
   font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
+
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -69,16 +120,13 @@
   font-weight: var(--fw-medium);
 }
 
-.hero-image img {
-  width: 100%;
-  position:relative;
-
-  object-fit: cover;
-
-  display: block;
-}
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+  }
+
   .hero-content {
     padding: 48px 24px;
   }
@@ -86,34 +134,24 @@
   .hero-title {
     font-size: 3rem;
   }
+
+  .hero-image::after {
+    background: linear-gradient(
+      to top,
+      rgba(18, 18, 18, 0.96) 0%,
+      rgba(18, 18, 18, 0.55) 45%,
+      rgba(18, 18, 18, 0.1) 100%
+    );
+  }
 }
 
 @media (max-width: 640px) {
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
   .hero-title {
     font-size: 2.5rem;
   }
-}
 
-@media (min-width: 640px) {
-    .fade-right {
-      mask-image: linear-gradient(to left, black 0%, transparent 80%);
-      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 80%);
-  }
-
-  .hero-content {
-    position:absolute;
-    left:0px;
-    top:0px;
-    padding: 80px;
-    z-index:1;
-  }
-
-.hero-image {
-    height: 420px;
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
