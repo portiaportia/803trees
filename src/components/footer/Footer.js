@@ -28,15 +28,16 @@ const Footer = () => {
             title="Contact"
             items={[
               { icon: "phone", text: "(803) 402-3736", href: "tel:8034023736" },
+              { icon: "sms", text: "Text Us", href: "sms:+8034023736" },
               {
                 icon: "map",
                 text: "Serving Columbia, Lexington, Irmo, and surrounding Midlands SC",
               },
               {
                 icon: "mail",
-                text: "info@803tree.com",
-                href: "mailto:info@803tree.com",
-              },
+                text: "tyler@803tree.com",
+                href: "mailto:tyler@803tree.com",
+              }
             ]}
           />
 
