@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe714a1a.css",
-    "main.js": "/static/js/main.a5aad23e.js",
+    "main.css": "/static/css/main.35efb4f0.css",
+    "main.js": "/static/js/main.47950a05.js",
+    "static/media/firewood.png": "/static/media/firewood.981127c2630b7b5fb086.png",
     "static/media/hero.png": "/static/media/hero.8a875202aff8cff9497d.png",
-    "static/media/logo.png": "/static/media/logo.f3c75866dbd594334373.png",
+    "static/media/mulch.png": "/static/media/mulch.995cd554428faca92dcf.png",
+    "static/media/logo.png": "/static/media/logo.fbf28e427be66e15e77a.png",
+    "static/media/health.png": "/static/media/health.7fdd3476577e5a262460.png",
     "static/media/lightening.png": "/static/media/lightening.b83391baa8ed170b6837.png",
     "static/media/tree.png": "/static/media/tree.4e0e5d2ab696b92c3acd.png",
     "static/media/chainsaw.png": "/static/media/chainsaw.f690c38808c82152b38d.png",
     "static/media/stump.png": "/static/media/stump.86d096e8da6d0e25f8b0.png",
     "index.html": "/index.html",
-    "main.fe714a1a.css.map": "/static/css/main.fe714a1a.css.map",
-    "main.a5aad23e.js.map": "/static/js/main.a5aad23e.js.map"
+    "main.35efb4f0.css.map": "/static/css/main.35efb4f0.css.map",
+    "main.47950a05.js.map": "/static/js/main.47950a05.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe714a1a.css",
-    "static/js/main.a5aad23e.js"
+    "static/css/main.35efb4f0.css",
+    "static/js/main.47950a05.js"
   ]
 }
