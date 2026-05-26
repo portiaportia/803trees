@@ -14,17 +14,17 @@ import LicensedInsured from "./LincensedInsured";
 
 const services = [
   {
-    Icon: Tree,
-    title: "Tree Removal",
-    description:
-      "Safe, efficient removal of hazardous or unwanted trees.",
-  },
-
-  {
     Icon: Chainsaw,
     title: "Tree Trimming",
     description:
       "Professional pruning to improve health, safety, and appearance.",
+  },
+  
+  {
+    Icon: Tree,
+    title: "Tree Removal",
+    description:
+      "Safe, efficient removal of hazardous or unwanted trees.",
   },
 
   {
