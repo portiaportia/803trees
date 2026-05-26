@@ -141,7 +141,15 @@
   }
 
   .hero-image img {
-    object-position: right center;
+    position: absolute;
+    top: -30%;
+    right: 0;
+
+    width: 200%;
+    height: 102%;
+
+    object-fit: cover;
+    transform: translateX(10%);
   }
 
   .hero-image::after {
@@ -153,7 +161,6 @@
     );
   }
 }
-
 @media (max-width: 640px) {
   .hero-title {
     font-size: 2.5rem;
