@@ -17,10 +17,14 @@ const Footer = () => {
           <FooterLinks
             title="Services"
             links={[
-              { label: "Tree Removal", href: "/" },
               { label: "Tree Trimming", href: "/" },
+              { label: "Tree Removal", href: "/" },
               { label: "Stump Grinding", href: "/" },
-              { label: "Emergency Service", href: "/" },
+              { label: "Emergency Services", href: "/" },
+              { label: "Plant Health Care", href: "/" },
+              { label: "Forestry Mulching", href: "/" },
+              { label: "Land Clearing", href: "/" },
+              { label: "Firewood Sales", href: "/" },
             ]}
           />
 
