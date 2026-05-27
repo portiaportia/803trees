@@ -13,10 +13,7 @@ const Firewood = () => {
           <p className="firewood-eyebrow">Available Now</p>
 
           <h2 className="firewood-title">
-            Seasoned
-            <br />
-            Firewood
-            <span> Available</span>
+            Seasoned Firewood!
           </h2>
 
           <p className="firewood-text">
